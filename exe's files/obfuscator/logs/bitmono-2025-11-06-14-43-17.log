@@ -1,0 +1,11 @@
+[2025-11-06 14:43:18 INF][BitMono.CLI.Program] File: C:\Users\iliya\Downloads\lab_3\my_project\LabWork.exe
+[2025-11-06 14:43:18 INF][BitMono.CLI.Program] Dependencies (libs): C:\Users\iliya\Downloads\lab_3\my_project
+[2025-11-06 14:43:18 INF][BitMono.CLI.Program] Everything is seems to be ok, starting obfuscation..
+[2025-11-06 14:43:18 INF][BitMono.CLI.Program] 
+       ___  _ __  __  ___
+      / _ )(_) /_/  |/  /__  ___  ___
+     / _  / / __/ /|_/ / _ \/ _ \/ _ \
+    /____/_/\__/_/  /_/\___/_//_/\___/
+    https://github.com/sunnamed434/BitMono
+    BitMono v0.36.0.0
+[2025-11-06 14:43:18 ERR][BitMono.Obfuscation.Modules.ModuleFactory] The file appears to be using native code (ReadyToRun). Ensure you're using a `.dll` file with non-native (managed) code. If the file is using ReadyToRun, you can disable it by adding `<PublishReadyToRun>false</PublishReadyToRun>` to your `.csproj` file. For more information, visit: https://bitmono.readthedocs.io/en/latest/obfuscationissues/ready-to-run.html Alternatively, the file might be broken, protected, or obfuscated. If neither of these cases apply, please contact us for support.

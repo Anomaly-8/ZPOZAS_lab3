@@ -1,0 +1,30 @@
+[2025-11-06 14:41:32 INF][BitMono.CLI.Program] File: C:\Users\iliya\Downloads\lab_3\my_project\libs\LabWork.dll
+[2025-11-06 14:41:32 INF][BitMono.CLI.Program] Dependencies (libs): C:\Users\iliya\Downloads\lab_3\my_project\libs
+[2025-11-06 14:41:32 INF][BitMono.CLI.Program] Everything is seems to be ok, starting obfuscation..
+[2025-11-06 14:41:32 INF][BitMono.CLI.Program] 
+       ___  _ __  __  ___
+      / _ )(_) /_/  |/  /__  ___  ___
+     / _  / / __/ /|_/ / _ \/ _ \/ _ \
+    /____/_/\__/_/  /_/\___/_//_/\___/
+    https://github.com/sunnamed434/BitMono
+    BitMono v0.36.0.0
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] Module LabWork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] Module Target Framework: .NETCoreApp 8.0
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] Module PE TimeDateStamp: "2053-09-29T14:00:58.0000000"
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] Module culture: unknown
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] BitMono running on: OS: Microsoft Windows NT 10.0.19045.0, .NET 8.0.21 v8.0, x64 bits
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.Notifiers.ProtectionsNotifier] (4) Enabled protection(s): ObjectReturnType, NoNamespaces, FullRenamer, AntiDebugBreakpoints
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.Notifiers.ProtectionsNotifier] (13) Disabled protection(s): AntiDe4dot, AntiDecompiler, AntiILdasm, BillionNops, BitDecompiler, BitDotNet, BitMethodDotnet, BitMono, BitTimeDateStamp, CallToCalli, DotNetHook, StringsEncryption, UnmanagedString
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] Starting resolving dependencies...
+[2025-11-06 14:41:32 WRN][BitMono.Obfuscation.BitMonoObfuscator] Failed to resolve dependency: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+[2025-11-06 14:41:32 WRN][BitMono.Obfuscation.BitMonoObfuscator] Failed to resolve dependency: System.Console, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+[2025-11-06 14:41:32 WRN][BitMono.Obfuscation.BitMonoObfuscator] Failed to resolve dependency: System.Diagnostics.Process, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] References resolve have been completed!
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] Executing Protections... this could take for a while...
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] ObjectReturnType -> OK
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] NoNamespaces -> OK
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] FullRenamer -> OK
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] AntiDebugBreakpoints -> OK
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] The protected module was saved in C:\Users\iliya\Downloads\lab_3\my_project\libs\output
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] Protections have been executed!
+[2025-11-06 14:41:32 INF][BitMono.Obfuscation.BitMonoObfuscator] Since obfuscation elapsed: 00:00:00.0937412

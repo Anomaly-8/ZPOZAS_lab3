@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BitMono.Shared</name>
+    </assembly>
+    <members>
+        <member name="T:BitMono.Shared.KnownConfigNames">
+            <summary>
+            Contains the known configuration file names used throughout BitMono.
+            </summary>
+        </member>
+        <member name="F:BitMono.Shared.KnownConfigNames.Criticals">
+            <summary>
+            The default criticals configuration file name.
+            </summary>
+        </member>
+        <member name="F:BitMono.Shared.KnownConfigNames.Logging">
+            <summary>
+            The default logging configuration file name.
+            </summary>
+        </member>
+        <member name="F:BitMono.Shared.KnownConfigNames.Obfuscation">
+            <summary>
+            The default obfuscation configuration file name.
+            </summary>
+        </member>
+        <member name="F:BitMono.Shared.KnownConfigNames.Protections">
+            <summary>
+            The default protections configuration file name.
+            </summary>
+        </member>
+    </members>
+</doc>
