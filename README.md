@@ -27,17 +27,11 @@ AntiDebugBreakpoints – добавляет в тела функций опре�
 ## Исходный код
 
     using System;
-
     using System.Diagnostics;
-
     using System.IO;
-
     namespace LabWork
-
     {
-    
     class Program
-    
     {
         static void Main(string[] args)
         {
@@ -45,131 +39,68 @@ AntiDebugBreakpoints – добавляет в тела функций опре�
             Console.WriteLine("Лабораторную работу выполнили: Курдюков Илья, Солодкин Сергей");
             Console.WriteLine($"Текущий пользователь ОС: {Environment.UserName}");
             Console.WriteLine($"Текущая рабочая директория: {Environment.CurrentDirectory}\n");
-
             // 2. Реализация системного вызова: запуск стандартного системного приложения
-            
             Console.WriteLine("[+] Выполняем системный вызов...");
-            
             try
-            
             {
-            
                 // Пытаемся запустить 'notepad.exe' - он есть в любой версии Windows
-                
                 // и его путь не зависит от пользователя (находится в system32)
-
                 Process.Start("notepad.exe");
-                
                 Console.WriteLine("[+] Блокнот (notepad.exe) запущен успешно.");
-                
             }
-            
             catch (Exception ex)
-            
             {
-            
-                Console.WriteLine($"[!] Ошибка при системном вызове: {ex.Message}");
-                
+                Console.WriteLine($"[!] Ошибка при системном вызове: {ex.Message}"); 
             }
-
             // 3. Вывод списка файлов и каталогов из папки Documents ТЕКУЩЕГО пользователя
-            
             Console.WriteLine("\n[+] Содержимое каталога Documents текущего пользователя:");
-
             // Ключевое изменение: используем специальную папку, а не жесткий путь.
-            
             string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-
             // Проверяем, существует ли вообще путь к Documents у этого пользователя
-            
             if (string.IsNullOrEmpty(documentsPath))
-            
             {
-            
-                Console.WriteLine("[!] Не удалось определить путь к папке Documents.");
-                
+                Console.WriteLine("[!] Не удалось определить путь к папке Documents."); 
             }
-            
             else if (!Directory.Exists(documentsPath))
-            
             {
-            
-                Console.WriteLine($"[!] Каталог не найден: {documentsPath}");
-                
+                Console.WriteLine($"[!] Каталог не найден: {documentsPath}");  
             }
-            
             else
-            
             {
-            
                 Console.WriteLine($"Путь: {documentsPath}\n");
-
                 try
-                
-                {
-                
-                    // Вывод каталогов
-                    
-                    Console.WriteLine("--- Каталоги ---");
-                    
-                    string[] directories = Directory.GetDirectories(documentsPath);
-                    
-                    foreach (var dir in directories)
-                    
-                    {
-                    
-                        // Выводим только имя папки, а не полный путь
-                        
+                {            
+                    // Вывод каталогов                  
+                    Console.WriteLine("--- Каталоги ---");                    
+                    string[] directories = Directory.GetDirectories(documentsPath);                   
+                    foreach (var dir in directories)                   
+                    {                  
+                        // Выводим только имя папки, а не полный путь                       
                         Console.WriteLine($"   [DIR] {Path.GetFileName(dir)}");
-                        
                     }
-
                     // Вывод файлов
-                    
                     Console.WriteLine("\n--- Файлы ---");
-                    
                     string[] files = Directory.GetFiles(documentsPath);
-                    
                     foreach (var file in files)
-                    
                     {
-                    
                         // Выводим только имя файла и его размер
-                        
                         FileInfo fileInfo = new FileInfo(file);
-                        
                         Console.WriteLine($"   [FILE] {Path.GetFileName(file),-30} Размер: {fileInfo.Length,10} байт");
-                        
                     }
-                    
                 }
-                
                 catch (UnauthorizedAccessException)
-                
                 {
-                
                     Console.WriteLine("[!] Ошибка доступа: нет прав на чтение каталога.");
-                    
                 }
-                
                 catch (Exception ex)
-                
                 {
-                
                     Console.WriteLine($"[!] Неожиданная ошибка при чтении каталога: {ex.Message}");
-                    
                 }
-                
             }
-
             Console.WriteLine("\nНажмите любую клавишу для выхода...");
-            
             Console.ReadKey();
-            
         }
-        
     }
-
 }
 
 Исходная программа выполняет следующие функции:
