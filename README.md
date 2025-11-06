@@ -26,30 +26,24 @@ AntiDebugBreakpoints – добавляет в тела функций опре�
 
 ## Исходный код
 
-{
-using System;
+    using System;
 
-using System.Diagnostics;
+    using System.Diagnostics;
 
-using System.IO;
+    using System.IO;
 
-namespace LabWork
+    namespace LabWork
 
-{
+    {
+    
     class Program
     
     {
-    
         static void Main(string[] args)
-        
         {
-        
             // 1. Вывод в консоль фамилий выполнивших работу
-            
             Console.WriteLine("Лабораторную работу выполнили: Курдюков Илья, Солодкин Сергей");
-            
             Console.WriteLine($"Текущий пользователь ОС: {Environment.UserName}");
-            
             Console.WriteLine($"Текущая рабочая директория: {Environment.CurrentDirectory}\n");
 
             // 2. Реализация системного вызова: запуск стандартного системного приложения
@@ -176,7 +170,6 @@ namespace LabWork
         
     }
 
-}
 }
 
 Исходная программа выполняет следующие функции:
